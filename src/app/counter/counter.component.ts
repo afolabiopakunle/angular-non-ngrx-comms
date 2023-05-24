@@ -12,4 +12,8 @@ export class CounterComponent implements OnInit {
   ngOnInit() {
   }
 
+  countChanged(data) {
+    console.log('count changed', data);
+  }
+
 }
