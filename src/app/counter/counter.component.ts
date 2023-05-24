@@ -12,8 +12,21 @@ export class CounterComponent implements OnInit {
   ngOnInit() {
   }
 
+  count = 0;
+
   countChanged(data) {
-    console.log('count changed', data);
+    switch(data) {
+      case 'add': 
+      return this.count++;
+      break;
+      case 'deduct': 
+      return this.count--
+      break;
+      case 'reset':
+      return this.count = 0;
+      default: this.count = 0
+      
+    }
   }
 
 }
